@@ -1,0 +1,142 @@
+/* 主容器样式 */
+#content {
+    -fx-background-color: #f5f5f5;
+    -fx-border-radius: 8px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 10, 0.1, 0, 2);
+}
+
+/* 图标按钮样式 */
+#up, #down, #delete {
+    -fx-cursor: hand;
+    -fx-opacity: 0.8;
+    -fx-transition: all 0.2s ease;
+}
+
+#up:hover, #down:hover, #delete:hover {
+    -fx-opacity: 0.9;
+}
+
+#up:pressed, #down:pressed, #delete:pressed {
+    -fx-opacity: 1.0;
+}
+
+/* 标题输入框样式 */
+#title {
+    -fx-background-color: #4f4f4f;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+    -fx-font-size: 19px;
+    -fx-font-family: "Consolas", "Monaco", "Courier New", monospace;
+}
+
+/* 代码文本区域样式 */
+#code {
+    -fx-background-color: #f8f9fa;
+    -fx-border-color: #dee2e6;
+    -fx-border-radius: 8px;
+    -fx-font-family: "Consolas", "Monaco", "Courier New", monospace;
+    -fx-font-size: 19px;
+    -fx-text-fill: #212529;
+    -fx-prompt-text-fill: #999999;
+    -fx-highlight-fill: #a8d1ff;
+    -fx-highlight-text-fill: #000000;
+    -fx-padding: 15px;
+    -fx-effect: innershadow(gaussian, rgba(0, 0, 0, 0.05), 5, 0, 0, 2);
+}
+
+/* 添加按钮样式 */
+#add {
+    -fx-background-color: linear-gradient(to bottom, #4a86e8, #3a76d8);
+    -fx-text-fill: white;
+    -fx-background-radius: 22.5px;
+    -fx-border-radius: 22.5px;
+    -fx-cursor: hand;
+    -fx-font-size: 20.4px;
+    -fx-font-family: "Consolas", "Monaco", "Courier New", monospace;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 5, 0.2, 0, 3);
+    -fx-transition: all 0.2s ease;
+}
+
+#add:hover {
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+    -fx-font-size: 20.4px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 6, 0, 0, 3);
+}
+
+#add:pressed {
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
+    -fx-font-size: 20.4px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 3, 0, 0, 2);
+}
+
+/* 修改按钮样式 */
+#modify {
+    -fx-background-color: linear-gradient(to bottom, #f39c12, #e67e22);
+    -fx-text-fill: white;
+    -fx-background-radius: 22.5px;
+    -fx-border-radius: 22.5px;
+    -fx-cursor: hand;
+    -fx-font-size: 20.4px;
+    -fx-font-family: "Consolas", "Monaco", "Courier New", monospace;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 5, 0.2, 0, 3);
+    -fx-transition: all 0.2s ease;
+}
+
+#modify:hover {
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+    -fx-font-size: 20.4px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 6, 0, 0, 3);
+}
+
+#modify:pressed {
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
+    -fx-font-size: 20.4px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 3, 0, 0, 2);
+}
+
+/* 保存按钮样式 */
+#save {
+    -fx-background-color: linear-gradient(to bottom, #2ecc71, #27ae60);
+    -fx-text-fill: white;
+    -fx-background-radius: 22.5px;
+    -fx-border-radius: 22.5px;
+    -fx-font-size: 20.4px;
+    -fx-font-family: "Consolas", "Monaco", "Courier New", monospace;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 5, 0.2, 0, 3);
+    -fx-transition: all 0.2s ease;
+}
+
+#save:hover {
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+    -fx-font-size: 20.4px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 6, 0, 0, 3);
+}
+
+#save:pressed {
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
+    -fx-font-size: 20.4px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 3, 0, 0, 2);
+}
+
+
+/* 滚动条样式 */
+.scroll-bar {
+    -fx-background-color: #f0f0f0;
+    -fx-pref-width: 8px;
+    -fx-pref-height: 8px;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #c0c0c0;
+    -fx-background-radius: 4px;
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: #a0a0a0;
+}

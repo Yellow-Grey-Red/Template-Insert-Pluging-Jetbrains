@@ -1,0 +1,53 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
+    <id>com.nfym.Template</id>
+
+    <!-- Public plugin name should be written in Title Case.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
+    <name>Template</name>
+
+    <version>1.0.0</version>
+    <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
+    <vendor email="githup:Yellow-Grey-Red" url="https://www.yourcompany.com">嘎嘎牛前途有限公司</vendor>
+
+    <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
+         Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
+    <description><![CDATA[
+    如果有些重复的代码你总是来回的ctrl cv,你可以试试这个插件。
+
+    Template是一个基于IntelliJ IDEA平台开发的插件，旨在帮助开发者快速管理和插入代码模板。
+
+    - JavaFX开发，支持添加、编辑、删除模板
+
+    使用场景：
+    - 快速插入常用代码片段，提高开发效率
+    - 减少重复编码，降低出错率
+    - 方便管理和维护大量代码模板
+    
+    支持的IDE版本：IntelliJ IDEA 2021.2+
+    我在调试第三方apk时，部分代码无法直接断点运行，所以我需要不断地插入smali日志代码，我很烦，所以我写了这个插件，同时反编译，编译，签名，安装，运行，也很烦
+    所以我写了另外一这工具，如果你也有这样的需求，你可以去https://github.com/Yellow-Grey-Red/Debug-APK下载
+    如果你觉得界面很丑，审美有问题，请包容一些，因为我的大学老师也是这样认为的，我已经很努力了。
+    ]]></description>
+
+    <!-- Product and plugin compatibility requirements.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <!-- Extension points defined by the plugin.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
+    <extensions defaultExtensionNs="com.intellij">
+
+    </extensions>
+    <actions>
+        <action id="displayUI" class="com.nfym.win" text="窗口" description="displayUI" icon="/META-INF/alpha_resized.png">
+            <add-to-group group-id="ToolbarRunGroup" anchor="first"/>
+        </action>
+        <action id="insert" class="com.nfym.InsertItem" text="插入">
+            <add-to-group group-id="CodeMenu" anchor="last"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="alt Q"/>
+        </action>
+    </actions>
+</idea-plugin>

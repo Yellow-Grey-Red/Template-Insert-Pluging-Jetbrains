@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<VBox prefHeight="0.0" prefWidth="349.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <HBox alignment="CENTER_LEFT" prefHeight="43.0" prefWidth="477.0" spacing="10.0">
+            <children>
+                <ImageView id="up" fx:id="up" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="NEVER">
+                    <image>
+                        <Image url="@up.png" />
+                    </image>
+                </ImageView>
+                <ImageView id="down" fx:id="down" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="NEVER">
+                    <image>
+                        <Image url="@down.png" />
+                    </image>
+                </ImageView>
+                <TextField id="title" fx:id="title" prefHeight="43.0" prefWidth="238.0" promptText="例如：Log，Print" style="-fx-background-color: #F4F4F4;" HBox.hgrow="ALWAYS">
+                    <font>
+                        <Font size="19.0" />
+                    </font>
+                </TextField>
+                <ImageView id="delete" fx:id="delete" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@delete.png" />
+                    </image>
+                </ImageView>
+            </children>
+            <VBox.margin>
+                <Insets />
+            </VBox.margin>
+        </HBox>
+        <Separator prefWidth="200.0" style="-fx-background-color: grey;" />
+    </children>
+</VBox>

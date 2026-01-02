@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.text.Font?>
+<VBox prefHeight="33.0" prefWidth="269.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <HBox alignment="CENTER_LEFT" prefHeight="29.0" prefWidth="269.0" spacing="10.0">
+            <children>
+                <ImageView id="up" fx:id="up" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@up.png" />
+                    </image>
+                </ImageView>
+                <ImageView id="down" fx:id="down" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@down.png" />
+                    </image>
+                </ImageView>
+                <Label id="title" fx:id="title" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="143.0" text="Log" HBox.hgrow="ALWAYS">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Label>
+                <ImageView id="delete" fx:id="delete" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@delete.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </HBox>
+        <Separator id="sep" fx:id="sep" prefWidth="200.0" />
+    </children>
+</VBox>
